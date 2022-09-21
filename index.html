@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locoffe A rede social para quem ama café - Login</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+
+<body id="bodyLogin" onload="recuperaUsuarios()">
+    <div id="divLogin">
+        <img id=logoLogin src="img/logo.png" alt="logo escrito locoffe e simbolo" width="200px">
+        <div id=loginCaixa>
+            <label for="login">Login</label>
+            <input id="login" type="text"> <br>
+        </div>
+        <div id=senhaCaixa>
+            <label for="senha">Senha</label>
+            <input id="senha" type="password"><br>
+        </div>
+        <button id="botao"
+            onclick="validaLogin(document.getElementById('login').value,document.getElementById('senha').value)">Login</button>
+        <button id="botaoCadastro" onclick="novoUsuario()">Cadastro</button>
+        <h6 id="dadosInvalidos"></h6>
+    </div>
+    <script src="app/user.js"></script>
+</body>
+
+</html>

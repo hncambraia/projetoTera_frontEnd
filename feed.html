@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/geral.css">   
+  <link rel="stylesheet" type="text/css" href="style/feed.css">  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Locoffe - A rede social para quem ama café</title>
+
+</head>
+
+<body
+  onload="recuperaUsuarios();getUser( location.search.substring(1)); imprimeFeedReceitasApi(location.search.substring(1));recuperaCotacoesMap()">
+
+  <div id="cabecalho"></div>
+
+
+  <br>
+
+  <main class="container">
+    <div class="row g-5">
+      <div class="col-md-8">
+
+        <div id="postsFeed"> </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h5 class='card-title'> Cotação da Saca de Café </h5>
+            <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();"
+              onmouseout="this.start();">
+              <div id="texto"></div>
+            </marquee>
+          </div>
+          <div class="p-4 mb-3 bg-light rounded">
+            <ul>
+              <h5 class='card-title'> Em Alta </h5>
+
+              <li> <a target="_blank" href="https://pt.wikipedia.org/wiki/Coffea_arabica"> Arábica </a> </li>
+              <li><a target="_blank" href="https://reviewcafe.com.br/dicas-e-receitas/cafe-conilon/"> Conilon </a>
+              </li>
+              <li><a target="_blank"
+                  href="https://www.noticiasagricolas.com.br/cotacoes/cafe/cafe-arabica-mercado-fisico-tipo-6-duro">
+                  Bebida Dura (Cotação)</a></li>
+              <li><a target="_blank" href="https://www.lojinhauai.com/blog/bebida-mole/"> Bebida Mole e Dura </a></li>
+            </ul>
+            <ul>
+              <h5 class='card-title'>Link Uteis</h5>
+
+              <li><a target="_blank" href="https://hubdocafe.com.br"> HUB do Café </a> </li>
+              <li><a target="_blank"
+                  href="https://www.google.com/search?q=safras+cafe&sxsrf=ALiCzsajbYpdkrpUtokLsNjD_H_b1-S9gw%3A1659567889065&ei=Ef_qYpnBA-vx1sQPwfaZgAU&ved=0ahUKEwjZjYiU5Kv5AhXruJUCHUF7BlAQ4dUDCA4&uact=5&oq=safras+cafe&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEB4QFjIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjIGCAAQHhAWOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOhIILhDHARDRAxDIAxCwAxBDGAI6EgguEMcBEK8BEMgDELADEEMYAjoPCC4Q1AIQyAMQsAMQQxgCOgUIABCABDoECAAQQzoLCC4QgAQQxwEQrwE6CAgAEB4QFhAKOgQIABANOgYIABAeEA06CAgAEB4QDRAFOgUIIRCgAToICCEQHhAWEB06CAgAEB4QCBANSgQIQRgASgQIRhgBUHBY6SVg7ChoBnABeACAAa4BiAHZCpIBBDAuMTCYAQCgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz">
+                  Safras de Café </a> </li>
+            </ul>
+          </div>
+
+        </div> 
+  </main>
+
+  <script src="app/user.js"></script>
+  <script src="app/feed.js"></script>
+</body>
+
+</html>

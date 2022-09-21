@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/geral.css">
+    <link rel="stylesheet" type="text/css" href="style/profile.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Locoffe - A rede social para quem ama café</title>
+</head>
+<div id="cabecalho"></div>
+
+<body onload="imprimeDadosUsuarios( location.search.substring(1))">
+    <br>
+    <main class="container">
+        <div class="row g-5">
+            <div class="col-md-2 md-5"> <img id="avatar" class="rounded"></div>
+            <div class="col-md-4 md-5 bg-light rounded ">
+                <br>
+                <h6 id="nome"></h6>
+                <h6 id="login"></h6>
+                <h6 id="email"></h6>
+                <h6 id="bio"></h6>
+                <center>
+                    <button onclick="fillEditUser()">Editar</button>
+                </center>
+                </td>
+                <br>
+            </div>
+
+            <div class="col-md-4 blog-sidebar">
+
+                <div class="p-4 mb-3 bg-light rounded">
+                    <center>
+                        <div id="listaAmigos"></div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app/user.js"></script>
+</body>
+
+</html>

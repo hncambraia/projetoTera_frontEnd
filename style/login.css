@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+#divLogin {
+    font-family:Montserrat;
+    font-weight: bold;
+    color: #F8F4EB;
+    background-color: #4B3128;
+    border-radius: 10pt;
+    padding: 34px 24px 10px 24px;
+    transform: translatex(-50%);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    top: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loginCaixa {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#senhaCaixa{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#botao{
+    background-color: #F8F4EB;
+    font-weight: bold;
+    font-family: Montserrat;
+    color: #4B3128;
+    border: #F8F4EB;
+    padding: 5px;
+    position: absolute;
+    top: 250px;
+    left: 25%;
+    transform: translate(-50%);
+}
+
+#botao:hover{
+    background-color: #4B3128;
+    color: #F8F4EB;
+    border: 1px solid #F8F4EB;
+}
+
+#botaoCadastro{
+    background-color: #F8F4EB;
+    font-weight: bold;
+    font-family: Montserrat;
+    color: #4B3128;
+    border: #F8F4EB;
+    padding: 5px;
+    position: absolute;
+    top: 250px;
+    left: 70%;
+    transform: translate(-50%);
+}
+
+#botaoCadastro:hover{
+    background-color: #4B3128;
+    color: #F8F4EB;
+    border: 1px solid #F8F4EB;
+}
+
+#bodyLogin
+{
+    background-color: #F8F4EB;
+}
